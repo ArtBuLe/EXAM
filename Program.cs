@@ -69,10 +69,12 @@ while (true)
                 break;
 
             case "4":
-                studentsTable = await DisconnectedTasks.LoadStudentsAsync();
-                Console.WriteLine("Данные загружены в память.");
-                DisconnectedTasks.PrintTable(studentsTable);
-                break;
+
+                //не успел исправить после выполнения последних заданий
+                //studentsTable = await DisconnectedTasks.LoadStudentsAsync();
+                //Console.WriteLine("Данные загружены в память.");
+                //DisconnectedTasks.PrintTable(studentsTable);
+                //break;
 
             case "5":
                 if (studentsTable is null)
