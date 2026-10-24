@@ -1,4 +1,17 @@
-﻿using DatabaseCourseExam.AdoNet;
+﻿//1 - 
+//    ExecuteReader - исполняет SELECT запрос
+//    ExecuteScalar - исполняет запросы возвращающие одно значение
+//    ExecuteNonQuery - исполняет запрос без возврата значений, выдает количество измененных строк
+//2 - 
+//    защита от SQL инъекций, невозможность выполнить сторонний sql запрос и получить лишние данные (защита бд)
+//3 - 
+//    транзакция - объединение нескольких запросов в один и пытается выполнить их все разом, если не выходит то отменяет все
+//    коммит - подтверждает изменения
+//    роллбек - отмена последних изменений
+
+
+
+using DatabaseCourseExam.AdoNet;
 using System.Data;
 using DatabaseCourseExam.EntityFramework;
 using DatabaseCourseExam.DapperTasks;
